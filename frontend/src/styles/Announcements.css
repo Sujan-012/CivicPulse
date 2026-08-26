@@ -1,0 +1,105 @@
+.announce-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 760px;
+}
+
+.announce-form-card,
+.announce-list-card {
+  padding: 28px;
+}
+
+.announce-form-card h2,
+.announce-list-card h2 {
+  font-size: 1.2rem;
+  color: var(--primary);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.announce-form-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.announce-form-card input,
+.announce-form-card textarea {
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  font-size: 0.92rem;
+  outline: none;
+  resize: vertical;
+}
+
+.announce-form-card input:focus,
+.announce-form-card textarea:focus {
+  border-color: var(--accent);
+}
+
+.announce-submit {
+  margin-top: 20px;
+  padding: 12px;
+}
+
+.announce-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.announce-item {
+  border-left: 4px solid var(--accent);
+  background: #f0fdfa;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 14px 18px;
+}
+
+.announce-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.announce-item-top h3 {
+  font-size: 1rem;
+  color: var(--primary);
+}
+
+.announce-delete {
+  background: transparent;
+  color: var(--danger);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.announce-delete:hover {
+  background: #fee2e2;
+}
+
+.announce-item p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+.announce-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 0.78rem;
+}
+
+.announce-due {
+  color: #b45309;
+  font-weight: 700;
+}
+
+.announce-posted {
+  color: #94a3b8;
+}

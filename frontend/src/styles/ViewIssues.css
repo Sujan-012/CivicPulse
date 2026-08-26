@@ -1,0 +1,167 @@
+.issues-container {
+  min-height: 100%;
+}
+
+.issues-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.issues-header h2 {
+  font-size: 1.7rem;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.issues-header p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.filter-controls {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 12px;
+  padding: 18px;
+  margin-bottom: 26px;
+}
+
+.filter-controls input,
+.filter-controls select {
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.filter-controls input:focus,
+.filter-controls select:focus {
+  border-color: var(--accent);
+}
+
+.no-issues {
+  text-align: center;
+  padding: 50px 20px;
+  color: var(--text-muted);
+}
+
+.issues-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.issue-card {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.issue-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.issue-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.issue-card-top h3 {
+  font-size: 1.08rem;
+  color: var(--primary);
+}
+
+.issue-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.issue-meta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.issue-date {
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.button-group .btn {
+  padding: 8px 14px;
+  font-size: 0.8rem;
+}
+
+.edit-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 200;
+}
+
+.edit-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-card h2 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.edit-card input,
+.edit-card textarea {
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  font-size: 0.9rem;
+  outline: none;
+  resize: vertical;
+}
+
+.edit-card input:focus,
+.edit-card textarea:focus {
+  border-color: var(--accent);
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.modal-buttons .btn {
+  flex: 1;
+}
+
+@media (max-width: 760px) {
+  .filter-controls {
+    grid-template-columns: 1fr;
+  }
+}
